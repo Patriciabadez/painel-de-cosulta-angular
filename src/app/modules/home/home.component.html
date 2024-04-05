@@ -1,21 +1,17 @@
 <div class="grid">
   <div class="col-12">
     <div class="flex justify-content-center align-content-center text-align-center">
-
       <form [formGroup]="loginForm" (ngSubmit)="onSubmitLoginForm()">
-        <p-card styleClass="mt-10" header="Login" subheader="Faça login com sua conta existente!" *ngIf="loginCard">
-          <div class="flex justify-content-center align-content-center text-align-center">
-            <input type="email" pInputText placeholder="Email" formControlName="email" />
-          </div>
-          <div class="flex justify-content-center align-content-center text-align-center mt-3">
-            <input type="password" pInputText placeholder="Senha" formControlName="password" />
-          </div>
+        <p-card styleClass="mt-10" *ngIf="loginCard">
+          <div>logo</div>
+          <div class="header-text mb-3">Bem-Vindo</div>
+          <p class="header-text-sub">Insira suas credenciais para entrar no sistema</p>
+          <p class="texto-login">E-mail</p>
+          <input type="email" pInputText placeholder="Email" formControlName="email" />
+          <p class="texto-login mt-3">Senha</p>
+          <input type="password" pInputText placeholder="Senha" formControlName="password" />
           <div class="card flex justify-content-center mt-3">
-            <button
-            type="submit"
-            pButton pRipple
-            label="Login"
-            [disabled]="!this.loginForm.valid">
+            <button type="submit" pButton pRipple label="Login" [disabled]="!this.loginForm.valid">
             </button>
           </div>
           <span
@@ -39,13 +35,7 @@
             <input type="password" pInputText placeholder="Senha" formControlName="password">
           </div>
           <div class="card flex justify-content-center mt-3">
-            <button
-            type="submit"
-            pButton
-            pRipple
-            label="Criar Conta"
-            [disabled]="!this.cadastroForm.valid"
-            >
+            <button type="submit" pButton pRipple label="Criar Conta" [disabled]="!this.cadastroForm.valid">
             </button>
           </div>
           <span

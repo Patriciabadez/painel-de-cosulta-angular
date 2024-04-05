@@ -1,14 +1,16 @@
 .grid {
-  background-image: url('../../../assets/sean-pollock-PhYq704ffdA-unsplash.jpg')!important;
-  background-size: cover;
+  background-image   : url('../../../assets/sean-pollock-PhYq704ffdA-unsplash.jpg') !important;
+  background-size    : cover;
   background-position: center;
-  background-repeat: no-repeat;
-  height: 100vmin;
+  background-repeat  : no-repeat;
+  height             : 100vmin;
 }
+
 @media screen and (min-width:1400px) {
   .grid {
     background-position: top;
   }
+
   @media screen and (min-width:1000px) {
     .grid {
       height: 100vmax;
@@ -16,3 +18,19 @@
   }
 }
 
+
+.header-text,
+.header-text-sub,
+.texto-login {
+  color: #006414;
+}
+
+.header-text {
+  font-size: 20px;
+}
+
+.header-text-sub {
+  font-size: 18px;
+}
+
+.texto-login {}
