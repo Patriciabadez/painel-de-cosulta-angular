@@ -46,7 +46,7 @@ export class HomeComponent {
             this.cookieService.set('USER_INFO', response.token);
             this.loginForm.reset();
 
-            this.router.navigate(['/notas-fiscais']);
+            this.router.navigate(['/home']);
 
             this.MessageService.add({
               severity:'sucess',

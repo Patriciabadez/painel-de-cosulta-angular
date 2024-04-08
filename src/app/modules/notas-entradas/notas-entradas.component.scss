@@ -1,3 +1,32 @@
+/* Estilos para o header */
+.header {
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header-row {
+  margin-top: 50px;
+  color: white;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+
+  margin: 5px 0;
+}
+
 .sidebar {
   width: 250px;
   background: #006414;
@@ -9,7 +38,8 @@
 }
 
 .consulta-panel {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+
 }
 
 .consulta-panel h3 {
@@ -18,14 +48,38 @@
 
 .consulta-item a {
   text-decoration: none;
-  color: #fff; /* Cor do texto dos itens de navegação */
+  color: #fff;
 }
 
 .consulta-item a:hover {
-  text-decoration: underline; /* Sublinhar ao passar o mouse */
+  text-decoration: underline;
 }
 
 .main-content {
-  margin-left: 250px; /* Deixe espaço para o menu lateral */
+  margin-left: 250px;
   padding: 20px;
+}
+
+.notas-table {
+  width: 100%;
+  //margin-top: 100px;
+  border-collapse: collapse;
+}
+
+.notas-table th, .notas-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.notas-table th {
+  background: #006414;
+  height: 80px;
+}
+
+.notas-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.notas-table tr:hover {
+  background-color: #ddd;
 }

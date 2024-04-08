@@ -1,6 +1,6 @@
-<div class="sidebar">
+
+<div class="sidebar" [ngClass]="{ 'sidebar-open': sidebarOpen }">
   <div class="consulta-panel">
-    <!-- <h3>NOTAS DE ENTRADAS</h3> -->
     <div class="consulta-item" *ngFor="let consulta of consultas">
       <a [routerLink]="consulta.rota">
         <p>{{ consulta.nome }}</p>
@@ -8,6 +8,30 @@
     </div>
   </div>
 </div>
+
 <div class="main-content">
-  <h2>NOTAS DE ENTRADAS</h2>
+  <h1 class="mt-5">NOTAS DE ENTRADAS</h1>
+
+  <table class="notas-table mt-5">
+    <thead>
+      <tr class="header-row">
+        <th>Nome</th>
+        <th>Número</th>
+        <th>CNPJ/CPF</th>
+        <th>Empresa</th>
+        <th>Valor</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let nota of notas">
+        <td>{{ nota.nome }}</td>
+        <td>{{ nota.numero }}</td>
+        <td>{{ nota.cnpjCpf }}</td>
+        <td>{{ nota.empresa }}</td>
+        <td>{{ nota.valor | currency }}</td>
+        <td><a [routerLink]="nota.rota">{{ nota.link }}</a></td>
+      </tr>
+    </tbody>
+  </table>
 </div>

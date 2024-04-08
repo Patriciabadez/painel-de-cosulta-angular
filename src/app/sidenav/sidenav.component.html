@@ -1,0 +1,42 @@
+<mat-toolbar class="mat-elevation-z3 toolbar">
+  <div class="left-buttons">
+    <button mat-icon-button (click)="collapsed.set(!collapsed())">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div>
+      <p class="text_version">Versão 1.4</p>
+    </div>
+  </div>
+
+  <div class="container logo-container">
+    <div class="logo-image">
+      <img src="" alt="Logo LCD" class="logo-img" />
+    </div>
+  </div>
+
+  <div class="right-buttons">
+    <div class="text email-container">
+      <p class="text text_user">{{ loggedInUsername }}</p>
+      <!-- <p class="text text_email">engenhoam&#64;engenhoam.com.br</p> -->
+    </div>
+    <button mat-icon-button (click)="logout()">
+      <mat-icon>exit_to_app</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav opened mode="side" [style.width]="sideNavWidth()">
+    <mat-nav-list [style.padding]="16">
+      <a *ngFor="let item of items" mat-list-item [routerLink]="[item.route]">
+        <mat-icon mat-list-icon>
+          <span class="mat-icon-imagem">{{ item.icon }} </span>
+        </mat-icon>
+        <span class="custom-text-color">{{ item.label }} </span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="content" [style.marginLeft]="sideNavWidth()">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

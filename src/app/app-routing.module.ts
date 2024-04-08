@@ -7,7 +7,7 @@ import { NotasEntradasComponent } from './modules/notas-entradas/notas-entradas.
 
 const routes: Routes = [
   { path: 'login', component: HomeComponent },
-  { path: 'notas-fiscais', component: DashboardHomeComponent },
+  { path: 'home', component: DashboardHomeComponent },
   { path: 'notas-vendas', component: NotasVendasComponent },
   { path: 'notas-entradas', component: NotasEntradasComponent},
   { path: '', redirectTo: '/login', pathMatch: 'full' },
