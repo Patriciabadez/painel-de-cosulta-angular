@@ -17,6 +17,7 @@ import { VisualizarNotasComponent } from './modules/page/visualizar-notas/visual
 import { TesteComponent } from './modules/page/teste/teste.component';
 import { NotasVendasComponent } from './modules/notas-vendas/notas-vendas.component';
 import { NotasEntradasComponent } from './modules/notas-entradas/notas-entradas.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { NotasEntradasComponent } from './modules/notas-entradas/notas-entradas.
     VisualizarNotasComponent,
     TesteComponent,
     NotasVendasComponent,
-    NotasEntradasComponent
+    NotasEntradasComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,

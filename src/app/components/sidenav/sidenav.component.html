@@ -1,0 +1,9 @@
+<div class="sidebar" [ngClass]="{ 'sidebar-open': sidebarOpen }">
+  <div class="consulta-panel">
+    <div class="consulta-item" *ngFor="let consulta of consultas">
+      <a [routerLink]="consulta.rota">
+        <p>{{ consulta.nome }}</p>
+      </a>
+    </div>
+  </div>
+</div>

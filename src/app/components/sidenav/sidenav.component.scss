@@ -1,0 +1,28 @@
+.sidebar {
+  width: 250px;
+  background: #006414;
+  padding: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.consulta-panel {
+  margin-bottom: 50px;
+
+}
+
+.consulta-panel h3 {
+  color: #fff; /* Cor do texto do título */
+}
+
+.consulta-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.consulta-item a:hover {
+  text-decoration: underline;
+}
+

@@ -6,17 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./notas-entradas.component.scss']
 })
 export class NotasEntradasComponent {
-  sidebarOpen = false;
-
-  toggleSidebar(): void {
-    this.sidebarOpen = !this.sidebarOpen;
-  }
-  consultas = [
-    { id: 1, nome: 'Notas de Vendas', rota: '/notas-vendas' },
-    { id: 2, nome: 'Notas de Entradas', rota: '/notas-entradas' },
-    { id: 3, nome: 'Voltar ao inicio', rota: '/home' },
-    { id: 3, nome: 'Sair', rota: '/' }
-  ];
 
   notas = [
     {

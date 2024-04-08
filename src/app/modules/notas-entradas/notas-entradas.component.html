@@ -1,13 +1,4 @@
-
-<div class="sidebar" [ngClass]="{ 'sidebar-open': sidebarOpen }">
-  <div class="consulta-panel">
-    <div class="consulta-item" *ngFor="let consulta of consultas">
-      <a [routerLink]="consulta.rota">
-        <p>{{ consulta.nome }}</p>
-      </a>
-    </div>
-  </div>
-</div>
+<app-sidenav></app-sidenav>
 
 <div class="main-content">
   <h1 class="mt-5">NOTAS DE ENTRADAS</h1>
