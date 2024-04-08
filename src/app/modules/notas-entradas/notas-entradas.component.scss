@@ -13,19 +13,19 @@
 }
 
 .consulta-panel h3 {
-  color: #fff;
+  color: #fff; /* Cor do texto do título */
 }
 
 .consulta-item a {
   text-decoration: none;
-  color: #fff;
+  color: #fff; /* Cor do texto dos itens de navegação */
 }
 
 .consulta-item a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Sublinhar ao passar o mouse */
 }
 
 .main-content {
-  margin-left: 250px;
+  margin-left: 250px; /* Deixe espaço para o menu lateral */
   padding: 20px;
 }

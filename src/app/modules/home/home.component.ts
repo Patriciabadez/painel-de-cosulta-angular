@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { SignupUserRequest } from 'src/app/models/interfaces/user/SignupUserRequest';
 import { SignupUserResponse } from 'src/app/models/interfaces/user/SignupUserResponse';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -21,7 +22,8 @@ export class HomeComponent {
     private formBuilder: FormBuilder,
     private UserService: UserService,
     private cookieService: CookieService,
-    private MessageService:MessageService
+    private MessageService:MessageService,
+    private router: Router
 
   ) {
     this.loginForm = this.formBuilder.group({
@@ -43,6 +45,8 @@ export class HomeComponent {
           if (response) {
             this.cookieService.set('USER_INFO', response.token);
             this.loginForm.reset();
+
+            this.router.navigate(['/notas-fiscais']);
 
             this.MessageService.add({
               severity:'sucess',

@@ -1,16 +1,14 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-dashboard-home',
-  templateUrl: './dashboard-home.component.html',
-  styleUrls: ['./dashboard-home.component.scss']
+  selector: 'app-notas-entradas',
+  templateUrl: './notas-entradas.component.html',
+  styleUrls: ['./notas-entradas.component.scss']
 })
-export class DashboardHomeComponent {
+export class NotasEntradasComponent {
   consultas = [
     { id: 1, nome: 'Notas de Vendas', rota: '/notas-vendas' },
     { id: 2, nome: 'Notas de Entradas', rota: '/notas-entradas' },
     { id: 3, nome: 'Página Inicial', rota: '/' }
   ];
-
 }
-

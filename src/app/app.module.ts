@@ -13,12 +13,20 @@ import { ToastModule} from 'primeng/toast';
 import {CookieService} from 'ngx-cookie-service';
 import { MessageService } from 'primeng/api';
 import { DashboardHomeComponent } from './modules/page/dashboard-home/dashboard-home.component';
+import { VisualizarNotasComponent } from './modules/page/visualizar-notas/visualizar-notas.component';
+import { TesteComponent } from './modules/page/teste/teste.component';
+import { NotasVendasComponent } from './modules/notas-vendas/notas-vendas.component';
+import { NotasEntradasComponent } from './modules/notas-entradas/notas-entradas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    DashboardHomeComponent
+    DashboardHomeComponent,
+    VisualizarNotasComponent,
+    TesteComponent,
+    NotasVendasComponent,
+    NotasEntradasComponent
   ],
   imports: [
     BrowserModule,

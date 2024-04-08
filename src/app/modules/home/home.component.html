@@ -4,8 +4,6 @@
       <form [formGroup]="loginForm" (ngSubmit)="onSubmitLoginForm()">
         <p-card class="transparent-card" styleClass="mt-10"*ngIf="loginCard">
           <div>logo</div>
-          <div class="header-text mb-3">Bem-Vindo</div>
-          <p class="header-text-sub">Insira suas credenciais para entrar no sistema</p>
           <div class="form-group">
             <p class="texto-login">E-mail</p>
             <input type="email" pInputText placeholder="Email" formControlName="email" class="full-width" />
