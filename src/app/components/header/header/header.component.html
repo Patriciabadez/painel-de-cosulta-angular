@@ -1,5 +1,11 @@
 <header>
   <div class="header-content">
-    Seu conteúdo aqui
+    <div class="logo">
+      <img src="../../../assets/LOGO-LCD-FINAL.webp" alt="Logo">
+    </div>
+    <div *ngIf="!isHomeRoute()" class="back-icon" (click)="voltar()">
+      <img src="../../../../assets/1486348819-back-backwards-repeat-arrows-arrow-blue_80473.svg" alt="icone-de-voltar">
+      Voltar
+    </div>
   </div>
 </header>

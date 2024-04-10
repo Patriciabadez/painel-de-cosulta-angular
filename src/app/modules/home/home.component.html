@@ -1,9 +1,11 @@
 <div class="grid">
   <div class="col-12">
-    <div class="flex justify-content-center align-content-center text-align-center">
+    <div class="flex justify-content-center align-content-center text-align-center mb-5">
       <form [formGroup]="loginForm" (ngSubmit)="onSubmitLoginForm()">
-        <p-card class="transparent-card" styleClass="mt-10"*ngIf="loginCard">
-          <div>logo</div>
+        <p-card class="transparent-card" styleClass="mt-10" *ngIf="loginCard">
+          <div>
+            <img class="logo" src="../../../assets/LOGO-LCD-FINAL.webp" alt="Logo">
+          </div>
           <div class="form-group">
             <p class="texto-login">E-mail</p>
             <input type="email" pInputText placeholder="Email" formControlName="email" class="full-width" />
@@ -15,7 +17,7 @@
           <div class="card flex justify-content-center mt-3">
             <button type="submit" pButton pRipple label="Login" [disabled]="!this.loginForm.valid" class="green-button">
             </button>
-        </div>
+          </div>
           <span
             class="flex justify-content-center align-content-center text-align-center mt-3 text-red-600 font-semibold cursor-pointer"
             (click)="loginCard = !loginCard">Criar

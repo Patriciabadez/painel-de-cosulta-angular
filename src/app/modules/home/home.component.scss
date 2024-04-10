@@ -7,10 +7,11 @@
   height             : 100vmin;
 }
 
-.heder-text,
-.header-text-sub,
-.texto-login {
-  color: #006414;
+.logo {
+  margin-left : 90px;
+  margin-right: 90px;
+  width       : 205.27px;
+  height      : 51.69;
 }
 
 .header-text {
@@ -21,22 +22,25 @@
   font-size: 18px;
 }
 
+
+
 // .texto-login {}
 
 input {
   width: 100%;
 
 }
+
 .green-button {
-  width: 100%;
-  background-color: #006414;
-  color: white;
-  border: none;
-  padding: 10px 20px;
+  width        : 100%;
+  background   : #1B3D61;
+  color        : white;
+  border       : none;
+  padding      : 10px 20px;
   border-radius: 5px;
-  cursor: pointer;
+  cursor       : pointer;
 }
 
 .green-button:hover {
-  background-color:#006414;
+  background: #1b3d61d3;
 }

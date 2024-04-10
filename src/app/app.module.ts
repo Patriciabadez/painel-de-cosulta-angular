@@ -39,7 +39,7 @@ import { HeaderComponent } from './components/header/header/header.component';
     CardModule,
     InputTextModule,
     ButtonModule,
-    ToastModule
+    ToastModule,
 
   ],
   providers: [CookieService, MessageService],
