@@ -1,20 +1,23 @@
 .sidebar {
   width: 250px;
-  background: #006414;
-  padding: 40px;
+  background: #1B3D61;
+  padding: 50px;
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   bottom: 0;
+  margin-top: 90px;
+
 }
 
 .consulta-panel {
-  margin-bottom: 50px;
+  //margin-bottom: 70px;
 
 }
 
 .consulta-panel h3 {
-  color: #fff; /* Cor do texto do título */
+  color: #fff;
 }
 
 .consulta-item a {
