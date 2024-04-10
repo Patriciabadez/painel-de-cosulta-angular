@@ -1,5 +1,32 @@
 <app-sidenav></app-sidenav>
-<div class="main-content">
-  <h2>NOTAS DE VENDAS</h2>
-</div>
 
+<div class="main-content">
+  <h1 class="mt-5">NOTAS DE VENDAS</h1>
+
+  <table class="notas-table mt-5">
+    <thead>
+      <tr class="header-row">
+        <th>ID</th>
+        <th>Data</th>
+        <th>Nome</th>
+        <th>Número</th>
+        <th>CNPJ/CPF</th>
+        <th>Empresa</th>
+        <th>Valor</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let nota of notas">
+        <td>{{ nota.id }}</td>
+        <td>{{ nota.data }}</td>
+        <td>{{ nota.nome }}</td>
+        <td>{{ nota.numero }}</td>
+        <td>{{ nota.cnpjCpf }}</td>
+        <td>{{ nota.empresa }}</td>
+        <td>{{ nota.valor | currency }}</td>
+        <td><a [routerLink]="nota.rota">{{ nota.link }}</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

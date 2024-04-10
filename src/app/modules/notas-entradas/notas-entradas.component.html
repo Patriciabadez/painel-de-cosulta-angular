@@ -6,6 +6,8 @@
   <table class="notas-table mt-5">
     <thead>
       <tr class="header-row">
+        <th>ID</th>
+        <th>Data</th>
         <th>Nome</th>
         <th>Número</th>
         <th>CNPJ/CPF</th>
@@ -16,6 +18,8 @@
     </thead>
     <tbody>
       <tr *ngFor="let nota of notas">
+        <td>{{ nota.id }}</td>
+        <td>{{ nota.data }}</td>
         <td>{{ nota.nome }}</td>
         <td>{{ nota.numero }}</td>
         <td>{{ nota.cnpjCpf }}</td>
