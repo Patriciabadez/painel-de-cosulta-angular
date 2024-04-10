@@ -60,7 +60,7 @@ export class HomeComponent {
           this.MessageService.add({
             severity:'error',
             summary:'Erro',
-            detail: `Errro ao efetuar login!`,
+            detail: `Erro ao efetuar login!`,
             life: 2000,
           })
         }
