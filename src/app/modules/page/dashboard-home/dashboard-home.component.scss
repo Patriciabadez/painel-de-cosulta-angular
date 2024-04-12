@@ -1,9 +1,58 @@
-.main-content {
-  margin: 150px;
-  display        : flex;
+
+/* Estilos para o header */
+.header {
+  color: #fff;
+  padding: 10px;
+  display: flex;
   justify-content: center;
-  text-align     : center;
-  align-items    : center;
-  font-size: 24px;
-  font-weight: 600;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header-row {
+  color: white;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+
+  margin: 5px 0;
+}
+
+
+.main-content {
+  margin-top: 50px;
+  margin-left: 250px;
+  padding: 50px;
+}
+
+.notas-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.notas-table th, .notas-table td {
+  border: 1px solid #dbdbd669;
+  padding: 8px;
+}
+
+.notas-table th {
+  background: #1B3D61;
+  height: 80px;
+}
+
+.notas-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.notas-table tr:hover {
+  background-color: #ddd;
 }

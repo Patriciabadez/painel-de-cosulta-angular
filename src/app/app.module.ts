@@ -40,7 +40,6 @@ import { HeaderComponent } from './components/header/header/header.component';
     InputTextModule,
     ButtonModule,
     ToastModule,
-
   ],
   providers: [CookieService, MessageService],
   bootstrap: [AppComponent]

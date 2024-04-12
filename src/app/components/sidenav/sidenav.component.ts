@@ -16,6 +16,7 @@ export class SidenavComponent {
     { id: 1, nome: 'Notas de Vendas', rota: '/notas-vendas' },
     { id: 2, nome: 'Notas de Entradas', rota: '/notas-entradas' },
     { id: 3, nome: 'Voltar ao inicio', rota: '/home' },
-    { id: 3, nome: 'Sair', rota: '/' }
+    { id: 4, nome: 'dashboard', rota: '/dashboard' },
+    { id: 5, nome: 'Sair', rota: '/' }
   ];
 }

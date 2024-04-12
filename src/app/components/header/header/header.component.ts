@@ -1,6 +1,7 @@
 import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { SidenavComponent } from '../../sidenav/sidenav.component';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  constructor(private router: Router, private location: Location) {}
+  constructor(private router: Router, private location: Location,private sidenav: SidenavComponent) {}
 
   ngOnInit(): void {}
 
@@ -17,5 +18,9 @@ export class HeaderComponent implements OnInit {
   }
   voltar() {
     this.router.navigate(['/home']);
+  }
+
+  toggleSidebar(): void {
+    this.sidenav.toggleSidebar(); // Chame o método toggleSidebar do componente do sidenav
   }
 }

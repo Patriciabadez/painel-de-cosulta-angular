@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'home', component: DashboardHomeComponent },
   { path: 'notas-vendas', component: NotasVendasComponent },
   { path: 'notas-entradas', component: NotasEntradasComponent},
+  { path: 'dashboard', component: DashboardHomeComponent},
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: '**', redirectTo: '/login' }
 ];

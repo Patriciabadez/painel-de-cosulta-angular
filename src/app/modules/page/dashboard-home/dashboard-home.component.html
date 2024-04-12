@@ -1,6 +1,29 @@
 <app-sidenav></app-sidenav>
+
 <div class="main-content">
-  <div class="home_text">
-    <h2>Olá seja bem vindo ao nosso sistema de notas de entradas e saídas</h2>
-  </div>
+  <h1 class="mt-5">NOTAS DE ENTRADAS</h1>
+
+  <button (click)="getNotas()">Obter Notas Fiscais</button> <!-- Botão para chamar o método -->
+
+  <table class="notas-table mt-5" *ngIf="notas.length > 0"> <!-- Verifica se há notas para exibir -->
+    <thead>
+      <tr class="header-row">
+        <th>CNPJ</th>
+        <th>CFOP</th>
+        <th>Valor</th>
+        <th>Total</th>
+        <th>Link</th>
+      </tr>
+      
+    </thead>
+    <tbody>
+      <tr *ngFor="let nota of notas">
+        <td>{{ nota.cnpj }}</td>
+        <td>{{ nota.cfop }}</td>
+        <td>{{ nota.valor }}</td>
+        <td>{{ nota.total }}</td>
+        <td><a [routerLink]="nota.rota">{{ nota.link }}</a></td>
+      </tr>
+    </tbody>
+  </table>
 </div>
